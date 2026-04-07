@@ -35,7 +35,7 @@ export default function Business() {
         <section style={{ backgroundImage: "url('/feature-section-2BG.svg')" }} className="bg-no-repeat bg-cover pt-[16rem] pb-[500px] mt-14" >
             <div className="w-10/12 max-w-[1080px]  mx-auto relative">
                 <h2 className="font-mullish text-center text-2xl leading-[1.2] font-extrabold text-white">Explore RazorPay Business Banking</h2>
-                <div className="w-6 h-1 bg-greenLight mx-auto mt-4 mb-16"></div>
+                <div className="w-6 h-1 bg-greenLight mx-auto mt-4 mb-16 z-30"></div>
 
                 {/* Main Feature Box */}
                 <div className="w-full min-h-[440px] flex relative">
