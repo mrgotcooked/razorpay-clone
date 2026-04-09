@@ -61,9 +61,9 @@ export default function New(){
     return (
         <section className="bg-white relative">
            <div className="relative w-11/12 max-w-[1080px] mx-auto pt-4">
-                <img src={dotted} alt=""  className="absolute w-[233px] left-[300px] -top-[6rem] z-[10]"/>
-                <img src={dotted} alt="" className="absolute w-[233px] -top-[6rem] -right-[3.5rem] z-[10]"/>
-            <div className="w-full grid grid-cols-3 gap-4 relative z-[100]">
+                <img src={dotted} alt=""  className="absolute w-[233px] left-[300px] -top-[6rem] z-[10] hidden md:block"/>
+                <img src={dotted} alt="" className="absolute w-[233px] -top-[6rem] -right-[3.5rem] z-[10] hidden md:block"/>
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-[100]">
                 {/* item1 */}
                 <div className="relative items-center ">
                     <h2 className="text-deepBlueHead font-mullish font-bold text-4xl leading-[3.375rem]"> New in the <br />

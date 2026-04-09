@@ -69,10 +69,12 @@ export default function Feature() {
       <div className="relative w-11/12 max-w-[1080px] mx-auto pt-4">
 
         {/* Heading */}
-        <h2 className="font-mullish text-center text-2xl leading-[1.2] font-extrabold ">
+        <h2 className="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">
           Accept Payments with Razorpay Payment Suite
         </h2>
-
+        <h2 className="font-mullish text-center text-4xl leading-[1.2] font-extrabold md:hidden">
+          Explore Razorpay payment suite
+        </h2>
         {/* Green underline */}
         <div className="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
 
@@ -122,16 +124,16 @@ export default function Feature() {
             </ul>
 
             {/* Buttons */}
-            <div className="flex flex-row items-center gap-4 mt-4">
+            <div className="md:flex md:flex-row flex flex-col-reverse items-center gap-4 mt-4">
               
               {/* Sign Up Button */}
-              <button className="flex items-center bg-lightBlue text-white rounded font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 px-6 py-3">
+              <button className="flex items-center bg-lightBlue text-white rounded font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 px-6 justify-center w-full md:w-auto py-3">
                 <span>Sign Up Now</span>
                 <Right />
               </button>
 
               {/* Know More Link */}
-              <div className="flex items-center cursor-pointer group">
+              <div className="flex items-center cursor-pointer group self-start md:self-center">
                 <a
                   href="#"
                   className="flex items-center gap-1 font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200 px-2"
@@ -147,12 +149,12 @@ export default function Feature() {
           <img
             src={payment}
             alt="payment"
-            className="absolute max-w-[600px] right-0 bottom-0"
+            className="absolute max-w-[400px] hidden md:block md:max-w-[600px] right-0 bottom-0"
           />
         </div>
 
         {/* Feature Cards Grid (Bottom Section) */}
-        <div className="w-full grid grid-cols-3 gap-4 mt-10 ">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 ">
           
          {features.map((feature,idx)=>{
             return <FeatureCard title={feature.title} key={idx} description={feature.description} icon={feature.icon}/>

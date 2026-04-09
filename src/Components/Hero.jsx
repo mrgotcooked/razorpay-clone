@@ -3,7 +3,7 @@ import heroShape from "../Images/hero-shape.svg"
 export default function Hero() {
   return (
     <section className="relative bg-deepBlue ">
-        <div className="flex flex-row w-10/12 justify-between items-center mx-auto max-w-270">
+        <div className="flex lg:flex-row flex-col w-10/12 justify-between items-center mx-auto max-w-270">
             <div className="space-y-8">
                 <h1 className="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your busines</h1>
                 <div className="w-6 h-1 bg-greenLight"></div>

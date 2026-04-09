@@ -83,10 +83,10 @@ export default function Business() {
                             </ul>
 
                             {/* Buttons */}
-                            <div className="flex flex-row items-center gap-4 mt-4">
+                            <div className="flex md:flex-row flex-col-reverse items-center gap-4 mt-4">
 
                                 {/* Sign Up Button */}
-                                <button className="flex items-center bg-lightBlue text-white rounded font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 px-6 py-3 relative">
+                                <button className="flex items-center bg-lightBlue text-white rounded font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 w-full md:w-auto justify-center px-6 py-3 relative">
                                     <span className="mr-[50px]">Sign Up &nbsp;</span>
                                     <div className="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex items-center justify-center rounded"><svg
                                         className="w-6 h-6 -skew-x-[20deg]"
@@ -115,18 +115,18 @@ export default function Business() {
                         <img
                             src={banking}
                             alt="payment"
-                            className="absolute max-w-[600px] right-0 bottom-0"
+                            className="absolute hidden md:block md:max-w-[400px] lg:max-w-[600px] right-0 bottom-0"
                         />
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-3 max-w-[1080px] mx-auto mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[1080px] mx-auto mt-16">
                 {businessFeatures.map((features, idx) => {
                     return <DarkFeatureCard title={features.title} description={features.description} icon={features.icon} key={idx}/>
                 })}
             </div>
 
-            <div className="max-w-[1080px] border border-[#40424f] p-7 bg-[#181c2e] flex mx-auto items-center justify-center gap-7 mt-16 rounded">
+            <div className="md:max-w-[1080px]  border border-[#40424f] p-7 bg-[#181c2e] md:flex mx-auto items-center justify-center gap-7 mt-16 rounded hidden ">
                 <p className="font-mullish text-white text-lg">Check out the live demo to lear how RazorpayX works. <span className="font-bold">No sign-up required!</span></p>
                 <button className="flex items-center bg-lightBlue text-white rounded font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 px-6 py-3 relative">
                     <span className="mr-[50px]">Check out the Demo &nbsp;</span>

@@ -61,12 +61,12 @@ export const featuresData = [
 
 export default function Qualities() {
     return (
-        <section style={{ backgroundImage: "url('/core-features-sectionBg.svg')" }} className="bg-no-repeat bg-cover pt-[16rem] pb-[180px] mt-14" >
+        <section style={{ backgroundImage: "url('/core-features-sectionBg.svg')" }} className="bg-no-repeat bg-cover pt-[26rem] md:pt-[20rem] pb-[180px] mt-14" >
             <div className="w-10/12 max-w-[1080px]  mx-auto relative">
                 <h2 className="font-mullish text-center text-2xl leading-[1.2] font-extrabold text-white">Features</h2>
                 <div className="w-6 h-1 bg-greenLight mx-auto mt-4 mb-3 z-30"></div>
                 <p className="font-mullish text-center text-xl leading-[1.6] text-white w-[550px] mx-auto">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
-                <div className="grid grid-cols-4 gap-3 max-w-[1080px] mx-auto mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-w-[1080px] mx-auto mt-10">
                     {featuresData.map((features, idx) => {
                         return <BlueFeatureCard title={features.title} description={features.description} icon={features.icon} key={idx} />
                     })}

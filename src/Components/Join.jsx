@@ -1,5 +1,5 @@
 import company from "../Images/comanies.png";
-
+import { ChevronRight } from "lucide-react";
 export default function Join() {
   return (
     <>
@@ -20,10 +20,10 @@ export default function Join() {
       </style>
 
       <section className="bg-[#f4f8ff] relative pt-40 pb-12 -mt-[200px] -z-10">
-        <div className="w-10/12 max-w-[1080px] mx-auto relative flex">
+        <div className="w-10/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row">
           
           {/* left part */}
-          <div className="flex flex-col justify-center max-w-[calc(100%-500px)]">
+          <div className="flex flex-col justify-center md:max-w-[calc(100%-500px)] max-w-[100%]">
             <h2 className="font-mullish font-bold text-2xl text-deepBlueHead">
               Join the 50,00,000+ businesses using Razorpay
             </h2>
@@ -40,7 +40,7 @@ export default function Join() {
           </div>
 
           {/* right part */}
-          <div className="w-[500px] h-[500px] relative overflow-hidden">
+          <div className="w-[500px] h-[500px] relative overflow-hidden mt-3 md:mt-0">
             <div style={{background:"linear-gradient(180deg,#f4f8ff,#fff0)"}} className="absolute w-full h-[150px] top-0 z-50"></div>
             <img
               src={company}
